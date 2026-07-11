@@ -14,12 +14,13 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="pt-10">
-        <div className="flex flex-col gap-8">
+      <div className="pt-16">
+        <div className="flex flex-col gap-6">
           {projectsData.slice(0, 4).map((project, index) => (
             <div
+              id={`sticky-card-${index + 1}`}
               key={project.id || index}
-              className="w-full mx-auto max-w-3xl transition-all duration-500 group"
+              className="sticky-card w-full mx-auto max-w-2xl sticky transition-all duration-500 group"
             >
               <div className="box-border flex items-center justify-center rounded-lg shadow-[0_0_30px_0_rgba(0,0,0,0.3)] group-hover:shadow-[0_0_35px_rgba(22,242,179,0.25)] group-hover:-translate-y-1.5 transition-all duration-500 bg-[#0d1224]">
                 <ProjectCard project={project} />
