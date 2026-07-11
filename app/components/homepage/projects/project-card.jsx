@@ -10,15 +10,16 @@ function ProjectCard({ project }) {
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
       </div>
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
+      <div className="flex items-center justify-between px-4 lg:px-8 py-3.5 lg:py-4">
+        <div className="flex items-center space-x-1.5 lg:space-x-2 shrink-0">
+          <div className="h-2.5 w-2.5 lg:h-3 lg:w-3 rounded-full bg-red-400 group-hover:scale-110 transition-transform duration-300"></div>
+          <div className="h-2.5 w-2.5 lg:h-3 lg:w-3 rounded-full bg-orange-400 group-hover:scale-110 transition-transform duration-300 delay-75"></div>
+          <div className="h-2.5 w-2.5 lg:h-3 lg:w-3 rounded-full bg-green-300 group-hover:scale-110 transition-transform duration-300 delay-150"></div>
         </div>
-        <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
+        <p className="text-center text-[#16f2b3] font-semibold text-sm sm:text-base lg:text-lg flex-1 px-3 sm:px-6">
           {project.name}
         </p>
+        <div className="w-10 lg:w-14 shrink-0 hidden sm:block"></div>
       </div>
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
